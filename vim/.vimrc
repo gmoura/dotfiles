@@ -13,7 +13,7 @@ set laststatus=2                "Always display the status line
 set hidden                      "Hide buffer instead of closing it
 set pastetoggle=<F2>            "Paste without being smart
 set mouse=a                     "Mouse interation
-set ttyfast '                   "Indicates fast terminal connection
+set ttyfast                     "Indicates fast terminal connection
 set encoding=utf-8              " Set character encoding to use in vim
 set termencoding=utf-8          " Let vim know what encoding we use in our terminal
 
