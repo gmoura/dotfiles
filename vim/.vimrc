@@ -12,21 +12,31 @@ set autoread                    "Reload files changed outside vim
 set laststatus=2                "Always display the status line
 set hidden                      "Hide buffer instead of closing it
 set pastetoggle=<F2>            "Paste without being smart
+set mouse=a                     "Mouse interation
 
 " Key mappings
 
 let mapleader=","
-nnoremap ; :                        " Use ; over : for commands
-nnoremap <leader><space> :noh<cr>   " Clear search highlighting with ,<space>
-nnoremap <tab> :bnext<cr>           " Tab to next buffer
-nnoremap <s-tab> :bprevious<cr>     " Shift-tab to previous buffer
-nnoremap <leader><leader> <C-^>     " Switch between last two buffers
 
+" Use ; over : for commands
+nnoremap ; :
+
+" Clear search highlighting with ,<space>
+nnoremap <leader><space> :noh<cr>
+
+" Tab to next buffer
+nnoremap <tab> :bnext<cr>
+
+" Shift-tab to previous buffer
+nnoremap <s-tab> :bprevious<cr>
+
+" Switch between last two buffers
+nnoremap <leader><leader> <C-^>
 " Load plugins
 
-if filereadable(expand("$HOME/.vundle.vim"))
-  source $HOME/.vundle.vim
-endif
+ if filereadable(expand("$HOME/.vundle.vim"))
+   source $HOME/.vundle.vim
+ endif
 
 " Swap file and backups
 
@@ -82,8 +92,9 @@ syntax on
 set cursorline
 set background=dark
 let g:solarized_termcolors=256
-colorscheme solarized
+" colorscheme solarized
 highlight clear SignColumn
+
 
 " Scrolling
 
@@ -98,6 +109,5 @@ let g:ctrlp_max_files = 600
 let g:ctrlp_max_depth = 6
 
 " NERDTree
-
-nmap <leader>n :NERDTreeToggle<cr>
-let NERDTreeShowHidden=1
+" Stick this in your vimrc to open NERDTree with Ctrl+n
+map <C-n> :NERDTreeToggle<CR>

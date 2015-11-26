@@ -22,6 +22,7 @@ Bundle "gmarik/vundle"
 
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
+Plugin 'editorconfig/editorconfig-vim'
 Bundle "itchyny/lightline.vim"
 Plugin 'terryma/vim-multiple-cursors'
 Bundle 'rking/ag.vim'
