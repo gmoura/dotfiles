@@ -1,3 +1,5 @@
+#!/bin/bash
+
 ## Install man packages
 
 sudo apt-get install nodejs git ruby-full vim zsh curl wget 
