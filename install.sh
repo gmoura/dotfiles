@@ -1,12 +1,13 @@
-# Get current dir (so run this script from anywhere)
+#!/bin/bash
 
 DOTFILES_DIR=$(dirname $0)
 OS=$(uname -s)
-TOOLS="$DOTFILES/tools"
+TOOLS="$DOTFILES_DIR/tools"
 
 # Check operation system
+  echo "$TOOLS"
 
-if[ -z "$OSTYPE" ]
+if [ -n "$OSTYPE" ]; then
   case "$OSTYPE" in 
     linux*) 
       . "$TOOLS/ubuntu/install.sh"
@@ -15,10 +16,6 @@ if[ -z "$OSTYPE" ]
 
     darwin*)
       echo "Mac"
-    ;;
-
-    ms*)
-      echo "Win - MING"
     ;;
   esac
 fi
