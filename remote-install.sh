@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 [[ -x `command -v wget` ]] && CMD="wget --no-check-certificate -O -"
 [[ -x `command -v curl` ]] >/dev/null 2>&1 && CMD="curl -#L"

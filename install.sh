@@ -5,8 +5,6 @@ OS=$(uname -s)
 TOOLS="$DOTFILES_DIR/tools"
 
 # Check operation system
-  echo "$TOOLS"
-
 if [ -n "$OSTYPE" ]; then
   case "$OSTYPE" in 
     linux*) 
@@ -19,7 +17,6 @@ if [ -n "$OSTYPE" ]; then
     ;;
   esac
 fi
-
 
 ## Bunch of symlinks
 ln -sfv "$DOTFILES_DIR/git/.gitconfig" ~
